@@ -30,3 +30,12 @@ window.onload=function () {
     hmap();//绘制地图
     window.addEventListener('keydown', hqaj, true);
 }
+function szcanvasdx()
+{
+    //设置html中的canvas元素的大小
+    var myCanvas = document.getElementById("myCanvas");
+    myCanvas.setAttribute("width", screen.availWidth);
+    myCanvas.setAttribute("height", screen.availHeight);
+    myCanvas.setAttribute("id", "myCanvas");
+    document.body.appendChild(myCanvas);
+}
