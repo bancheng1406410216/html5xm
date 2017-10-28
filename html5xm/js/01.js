@@ -272,3 +272,31 @@ function fsz(sz) {
     hhmap();
     return map[x][y];
 }
+function yx()
+{
+    hzbj();
+    hzsz2048();
+    hzscore();
+    hzbest();
+    hzbzwb();
+  hz2048gz();
+    hzgz();
+    cshb=ctx.getImageData(0,0,maxwidth,maxheight);
+    hzsc(0);
+    if (localStorage.best)
+    {
+    }
+  else
+    {
+    localStorage.best=0;
+    }
+    best=Number(localStorage.best);
+    hzbe(best);
+    //alert(sjs(1,4));//1~4
+    ctx.fillStyle="rgb(255,255,255)";
+    fsz(2);
+   // ctx.putImageData(cshb,0,0,0,0,maxwidth,maxheight);
+}
+function hp() {
+    alert("帮助：\nh键——显示本帮助；\nwasd键及上下左右键——控制方向；\nn键——开始新游戏；\nv键——显示版本信息；");
+}
