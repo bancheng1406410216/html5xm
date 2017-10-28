@@ -34,6 +34,18 @@ window.onload=function () {
     //上面的方法即可以在视网膜屏上使用，也可以在普通的电脑屏幕上使用。
     //因为：如果通过css固定canvas的大小，那么：
     //1.无法使canvas的大小自相应2.在视网膜屏上，canvas的实际像素大小是css的像素大小的2倍
+    if (maxwidth<360)
+    {
+        tx=1;
+    }
+    if (maxheight<400)
+    {
+        tx=1;
+    }
+    if (tx==1)
+    {
+        alert("窗口太小，请拉大！");
+    }
     tzfbl();
     szcanvasdx();
     hq();
