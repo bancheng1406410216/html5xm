@@ -92,3 +92,13 @@ function szcanvasdx()
     myCanvas.setAttribute("id", "myCanvas");
     document.body.appendChild(myCanvas);
 }
+function hq() {
+    var c=document.getElementById("myCanvas");
+    if (c.getContext){
+      } else {
+          alert("此浏览器不支持html5的canvas元素。\n请更新浏览器版本到最新版或更换浏览器。\n推荐的浏览器为：\nchrome的最新版\n推荐的操作系统为：macOS High Sierra (10.13)\n");
+          return;
+      }
+    ctx=c.getContext("2d");
+    ctx.rotate(2.3*Math.PI/180);
+}
