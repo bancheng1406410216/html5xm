@@ -128,3 +128,21 @@ function hzsz2048() {
     ctx.fillText("2048",maxwidth/2-(maxheight/1000*800/2)/2-10,40,((maxheight/1000*800/2)/2-10)*2);
     ctx.textAlign="start";
 }
+function hzscore() {
+    ctx.fillStyle="rgb(153,103,0)";
+    ctx.globalAlpha=0.3;
+    hzyjjx(maxwidth/2,5,80,45,20);
+    ctx.globalAlpha=1;
+    ctx.font=" 20px myPingFangSC-Semibold";
+    ctx.fillStyle="rgb(244,244,244)";
+    ctx.fillText("score",maxwidth/2+10,20,80);
+}
+function hzbest() {
+    ctx.fillStyle="rgb(153,103,0)";
+    ctx.globalAlpha=0.3;
+    hzyjjx(maxwidth/2+90,5,80,45,20);
+    ctx.globalAlpha=1;
+    ctx.font=" 20px myPingFangSC-Semibold";
+    ctx.fillStyle="rgb(244,244,244)";
+    ctx.fillText("best",maxwidth/2+108,20,80);
+}
