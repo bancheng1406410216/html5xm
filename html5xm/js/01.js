@@ -84,3 +84,11 @@ function tzfbl() {
         }
     }
 }
+function szcanvasdx()
+{
+    var myCanvas = document.getElementById("myCanvas");
+    myCanvas.setAttribute("width", maxwidth);
+    myCanvas.setAttribute("height", maxheight);
+    myCanvas.setAttribute("id", "myCanvas");
+    document.body.appendChild(myCanvas);
+}
