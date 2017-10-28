@@ -1,0 +1,12 @@
+html,body
+{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+canvas
+{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+}

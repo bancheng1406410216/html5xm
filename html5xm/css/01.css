@@ -1,0 +1,16 @@
+html,body
+{
+    width: 90%;
+    height: 90%;
+    background-color: #ffdab9;
+}
+canvas
+{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+}
+@font-face {
+    font-family: "myPingFangSC-Semibold";
+    src: url("zt/zt.ttf");
+  }
