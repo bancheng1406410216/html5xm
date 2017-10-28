@@ -23,3 +23,10 @@ var ch=0;//迷宫的出口的位置
 var cs=0;//迷宫的出口的位置
 var wc=false;//是否完成了当前关卡
 var max=3;//与最大关数有关
+window.onload=function () {
+    dqgs=0;
+    szcanvasdx();
+    hqhb();
+    hmap();//绘制地图
+    window.addEventListener('keydown', hqaj, true);
+}
