@@ -60,9 +60,11 @@ window.onload=function () {
 window.onresize = function(){
     //当人为地调整大小后，重新加载页面
     if (yzgz<2) {  
+        location.reload(true);
    }  
    else {  
     if (confirm("你确定重新加载吗？")) {  
+        location.reload(true);
     }  
     else {  
     }
