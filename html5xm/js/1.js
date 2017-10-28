@@ -39,3 +39,10 @@ function szcanvasdx()
     myCanvas.setAttribute("id", "myCanvas");
     document.body.appendChild(myCanvas);
 }
+function hqhb()
+{
+    //获取canvas的js的对象
+    var c=document.getElementById("myCanvas");
+    ctx=c.getContext("2d"); 
+    alert("通过方向键使移动绿色的小球到红球的位置");  
+}
