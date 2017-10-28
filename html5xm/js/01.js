@@ -203,3 +203,7 @@ function hzgz() {
         gg=dkd*i;
     }
 }
+function sjs(min,max) {
+    return  Math.ceil(Math.random()*(max-min)+min);
+    //生成随机数
+}
