@@ -21,7 +21,32 @@
                 var xz = prompt("请输入你要玩的游戏的数字。\n1\t\t走迷宫游戏\n2\t\t2048游戏。\n3\t其它一些内容。", "");
                 if (xz)
                 {
-
+                    if(xz==1)
+                    {
+                        i=0;
+                        top.location="1.html";
+                    }
+                    else
+                    {
+                        if(xz==2)
+                        {
+                            i=0;
+                            top.location="01.html";
+                        }
+                        else
+                        {
+                            if(xz==3)
+                            {
+                                i=0;
+                                top.location="gn.html";
+                            }
+                            else
+                            {
+                                i=1;
+                                alert("输入错误！\n请重新输入！");
+                            }
+                        }
+                    }
                 }
                 else
                 {
