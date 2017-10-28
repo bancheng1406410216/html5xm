@@ -228,3 +228,47 @@ function szsz(xx,yy,sz) {
     ctx.fillStyle="ffffff";
     ctx.fillText(sz,x,y,dkd/2);
 }
+function fsz(sz) {
+    //在随机的位置上生成“2”这个数字
+    if (yzgz==16)
+    {
+        alert("游戏结束！\n请按“n”键开始新游戏\n");
+        return;
+    }
+    yzgz=yzgz+1;
+    var x=sjs(0,5);
+    var y=sjs(0,5);
+    var tj=1;
+    for (;tj==1;)
+    {
+        if (x<1)
+        {
+            x=1;
+        }
+        if (x>4)
+        {
+            x=4;
+        }
+        if (y<1)
+        {
+            y=1;
+        }
+        if (y>4)
+        {
+            y=4;
+        }
+        if (map[x][y]==0)
+        {
+            map[x][y]=sz;
+           
+            tj=0;
+        }
+        else
+        {
+        x=sjs(0,5);
+        y=sjs(0,5);
+        }
+    }
+    hhmap();
+    return map[x][y];
+}
