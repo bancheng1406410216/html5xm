@@ -164,3 +164,21 @@ function hzbzwb() {
     ctx.textAlign="center";
     ctx.fillText("请按“h”键获取帮助",maxwidth/2,70,200);
 }
+function hz2048gz() {
+    ctx.fillStyle="rgb(153,103,0)";
+    var a=ctx.shadowColor;
+    ctx.shadowColor="black";
+    var b=ctx.shadowBlur;
+    ctx.shadowBlur=25;
+    var c=ctx.shadowOffsetX;
+    ctx.shadowOffsetX=-20;
+    var d=ctx.shadowOffsetY;
+    ctx.shadowOffsetY=-20;
+    ctx.globalAlpha=0.2;
+    hzyjjx(maxwidth/2-(maxheight/1000*800/2),75,maxheight/1000*800,maxheight/1000*800,20);
+    ctx.shadowColor=a;
+    ctx.shadowBlur=b;
+    ctx.shadowOffsetX=c;
+    ctx.shadowOffsetY=d;
+    ctx.globalAlpha=1.0;
+}
