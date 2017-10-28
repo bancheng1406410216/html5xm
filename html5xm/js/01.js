@@ -158,3 +158,9 @@ function hzbe(fs) {
     ctx.textAlign="center";
     ctx.fillText(fs,maxwidth/2+128,40,80);
 }
+function hzbzwb() {
+    ctx.font=" 20px myPingFangSC-Semibold";
+    ctx.fillStyle="rgb(119,110,100)";
+    ctx.textAlign="center";
+    ctx.fillText("请按“h”键获取帮助",maxwidth/2,70,200);
+}
