@@ -300,3 +300,40 @@ function yx()
 function hp() {
     alert("帮助：\nh键——显示本帮助；\nwasd键及上下左右键——控制方向；\nn键——开始新游戏；\nv键——显示版本信息；");
 }
+function hhmap() {
+    if (cj>best)
+    {
+        best=cj;
+        if (localStorage.best)
+        {
+            if (localStorage.best>best)
+            {
+                best=Number(localStorage.best);
+            }
+            else
+            {
+                localStorage.best=Number(best);
+            }
+        }
+      else
+        {
+        localStorage.best=Number(best);
+        }
+    }
+    localStorage.setItem("best",best);
+    ctx.putImageData(cshb,0,0,0,0,maxwidth,maxheight);
+    hzsc(cj);
+    hzbe(best);
+    var i=1;
+    var j=1;
+    for (i=1;i<5;i++)
+    {
+        for (j=1;j<5;j++)
+        {
+            if (map[i][j]>0)
+            {
+            szsz(i,j,map[i][j]);
+            }
+        }
+    }
+}
