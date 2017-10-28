@@ -152,3 +152,9 @@ function hzsc(fs) {
     ctx.textAlign="center";
     ctx.fillText(fs,maxwidth/2+35,40,80);
 }
+function hzbe(fs) {
+    ctx.font=" 20px myPingFangSC-Semibold";
+    ctx.fillStyle="rgb(255,255,255)";
+    ctx.textAlign="center";
+    ctx.fillText(fs,maxwidth/2+128,40,80);
+}
