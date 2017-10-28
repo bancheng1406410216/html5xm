@@ -182,3 +182,24 @@ function hz2048gz() {
     ctx.shadowOffsetY=d;
     ctx.globalAlpha=1.0;
 }
+function hzgz() {
+    ctx.fillStyle="rgb(145,95,0)";
+    dkd=(maxheight/1000*800)/5;
+    xkd=dkd/5;
+    var csx=maxwidth/2-(maxheight/1000*800/2);
+    var csy=75;
+    var i=0;
+    var j=0;
+    var gg=0;
+    var hh=0;
+    for (i=1;i<5;i++)
+    {
+        for (j=1;j<5;j++)
+        {
+            hzyjjx(csx+xkd*i+gg,csy+xkd*j+hh,dkd,dkd,5);
+            hh=dkd*j;
+        }
+        hh=0;
+        gg=dkd*i;
+    }
+}
