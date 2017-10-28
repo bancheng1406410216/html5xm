@@ -1,10 +1,10 @@
 document.write("<p>浏览器的平台和版本信息: ");
-document.write("</p>");
+document.write(navigator.appVersion + "</p>");
 document.write("<p>运行浏览器的操作系统和（或）硬件平台: ");
-document.write("</p>");
+document.write(navigator.platform + "</p>");
 document.write("<p>显示浏览器的屏幕的高度: ");
-document.write("</p>");
+document.write(screen.height + "</p>");
 document.write("<p>显示浏览器的屏幕的宽度: ");
-document.write("</p>");
+document.write(screen.width + "</p>");
 document.write("<p>设备上物理像素和设备独立像素的比例: ");
 document.write("</p>");
