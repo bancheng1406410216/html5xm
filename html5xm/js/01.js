@@ -526,6 +526,7 @@ function hqaj(e)
            xqd0();
             break;
             case 86:
+            alert("版本信息：1.0.0版\n制作人：班丞、谈崇阳、王浩、陈西\n完成时间：2017年10月28日\n测试人员：班丞、谈崇阳");
             return;
              break;
         default:
