@@ -531,8 +531,10 @@ function hqaj(e)
         default:
         if (yzgz==16)
         {
+            alert("游戏结束！\n请按“n”键开始新游戏\n");
             return;
         }
+        alert("请按“h”键获取帮助");
         return;
             break;
     }
