@@ -109,3 +109,20 @@ function hmap()
         wzs=wzs+tps;
     }
 }
+function pd(a,b) {
+    //判断是否可以移动到那个位置
+    if (mapdq[a][b]==0)
+    {
+        return true;
+    }
+    if (mapdq[a][b]==1)
+    {
+        return false;
+    }
+    if (mapdq[a][b]==4)
+    {
+        wc=true;
+        return true;
+    }
+    return false;
+}
