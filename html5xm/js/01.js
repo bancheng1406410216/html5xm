@@ -337,3 +337,31 @@ function hhmap() {
         }
     }
 }
+function sqd0() {
+    var i=1;
+    var j=1;
+    for (i=1;i<5;i++)
+    {
+        for (j=1;j<4;j++)
+        {
+            if (map[i][j]==0)
+            {
+                map[i][j]=map[i][j+1];
+                map[i][j+1]=0;
+            }
+            else
+            {
+                if (map[i][j]==map[i][j+1])
+                {
+                    map[i][j]=map[i][j]*2;
+                    map[i][j+1]=0;
+                    yzgz=yzgz-1;
+                    if (cj<map[i][j])
+                    {
+                        cj=map[i][j];
+                    }
+                }
+            }
+        }
+    }
+}
