@@ -449,3 +449,93 @@ function yqd0() {
         }
     }
 }
+function hqaj(e) 
+{
+    if (cj==2048)
+    {
+        alert("恭喜你完成了2048游戏!\n");
+        if (localStorage.best)
+        {
+            localStorage.best=0;
+        }
+      else
+        {
+        localStorage.best=0;
+        }
+        top.location='index.html'; 
+        window.location.replace("index.html");
+        return;
+    }
+    var keyID = e.keyCode ? e.keyCode :e.which;
+    switch (keyID) {
+        case 72:
+        hp();
+        return;
+        break;
+        case 78:
+        top.location='01.html'; 
+        window.location.replace("01.html");
+        return;
+        break;
+        case 37:
+            zqd0();
+            zqd0();
+            zqd0();
+            zqd0();
+            break;
+            case 65:
+            zqd0();
+            zqd0();
+            zqd0();
+            zqd0();
+            break;
+            case 38:
+           sqd0();
+           sqd0();
+           sqd0();
+           sqd0();
+            break;
+            case 87:
+            sqd0();
+            sqd0();
+            sqd0();
+            sqd0();
+            break;
+            case 39:
+            yqd0();
+            yqd0();
+            yqd0();
+            yqd0();
+            break;
+            case 68:
+            yqd0();
+            yqd0();
+            yqd0();
+            yqd0();
+            break;
+            case 40:
+            xqd0();
+            xqd0();
+            xqd0();
+            xqd0();
+            break;
+            case 83:
+           xqd0();
+           xqd0();
+           xqd0();
+           xqd0();
+            break;
+            case 86:
+            return;
+             break;
+        default:
+        if (yzgz==16)
+        {
+            return;
+        }
+        return;
+            break;
+    }
+    fsz(2);
+    hhmap();
+}
