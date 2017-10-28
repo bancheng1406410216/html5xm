@@ -130,12 +130,32 @@ function hqaj(e){
     var keyID = e.keyCode ? e.keyCode :e.which;
     switch (keyID) {
         case 37:
+        if (pd(rh,rs-1))
+        {
+            mapdq[rh][rs]=0;
+            mapdq[rh][rs-1]=3;
+        }
         break;
         case 38:
+        if (pd(rh-1,rs))
+        {
+            mapdq[rh][rs]=0;
+            mapdq[rh-1][rs]=3;
+        }
         break;
         case 39:
+        if (pd(rh,rs+1))
+        {
+            mapdq[rh][rs]=0;
+            mapdq[rh][rs+1]=3;
+        }
         break;
         case 40:
+        if (pd(rh+1,rs))
+        {
+            mapdq[rh][rs]=0;
+            mapdq[rh+1][rs]=3;
+        }
         break;
         default:
         return;
