@@ -126,3 +126,30 @@ function pd(a,b) {
     }
     return false;
 }
+function hqaj(e){
+    var keyID = e.keyCode ? e.keyCode :e.which;
+    switch (keyID) {
+        case 37:
+        break;
+        case 38:
+        break;
+        case 39:
+        break;
+        case 40:
+        break;
+        default:
+        return;
+        break;
+    }
+    if (wc)
+    {
+        ctx.clearRect(0,0,csh+(tph*mapdx[dqgs][1]+100),css+(tps*mapdx[dqgs][0]+100));
+        dqgs++;
+        wc=false;
+        hmap();
+    }
+    else
+    {
+        hmap();
+    }
+}
