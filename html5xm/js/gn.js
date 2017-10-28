@@ -7,4 +7,4 @@ document.write(screen.height + "</p>");
 document.write("<p>显示浏览器的屏幕的宽度: ");
 document.write(screen.width + "</p>");
 document.write("<p>设备上物理像素和设备独立像素的比例: ");
-document.write("</p>");
+document.write(window.devicePixelRatio + "</p>");
