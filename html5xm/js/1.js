@@ -29,7 +29,7 @@ window.onload=function () {
     dqgs=0;
     szcanvasdx();
     hqhb();
-    if (kyky==1)
+    if (kyky==0)
     {
         return;
     }
