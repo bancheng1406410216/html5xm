@@ -146,3 +146,9 @@ function hzbest() {
     ctx.fillStyle="rgb(244,244,244)";
     ctx.fillText("best",maxwidth/2+108,20,80);
 }
+function hzsc(fs) {
+    ctx.font=" 20px myPingFangSC-Semibold";
+    ctx.fillStyle="rgb(255,255,255)";
+    ctx.textAlign="center";
+    ctx.fillText(fs,maxwidth/2+35,40,80);
+}
