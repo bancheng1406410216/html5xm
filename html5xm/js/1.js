@@ -76,16 +76,30 @@ function hmap()
             
             switch (mapdq[h][s]) {
                 case 1:
-
+                ctx.fillStyle="#191970";
+                ctx.fillRect(wzh,wzs,tph,tps);
                 break;
                 case 0:
-
+                ctx.fillStyle="#ffffff";
+                ctx.fillRect(wzh,wzs,tph,tps);
                 break;
                 case 3:
-
+                ctx.fillStyle="#008000";
+                ctx.beginPath();
+                ctx.arc(wzh+tph/2,wzs+tph/2,tph/2,0,2*Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                rh=h;
+                rs=s;
                 break;
                 case 4:
-
+                ctx.fillStyle="#ff0000";
+                ctx.beginPath();
+                ctx.arc(wzh+tph/2,wzs+tph/2,tph/2,0,2*Math.PI);
+                ctx.stroke();
+                ctx.fill();
+                ch=h;
+                cs=s;
                 break;
                 default:
                 break;
