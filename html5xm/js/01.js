@@ -365,3 +365,31 @@ function sqd0() {
         }
     }
 }
+function xqd0() {
+    var i=1;
+    var j=1;
+    for (i=1;i<5;i++)
+    {
+        for (j=4;j>0;j--)
+        {
+            if (map[i][j]==0)
+            {
+                map[i][j]=map[i][j-1];
+                map[i][j-1]=0;
+            }
+            else
+            {
+                if (map[i][j]==map[i][j-1])
+                {
+                    map[i][j]=map[i][j]*2;
+                    yzgz=yzgz-1;
+                    map[i][j-1]=0;
+                    if (cj<map[i][j])
+                    {
+                        cj=map[i][j];
+                    }
+                }
+            }
+        }
+    }
+}
