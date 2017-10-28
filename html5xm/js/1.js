@@ -64,5 +64,34 @@ function hmap()
     ctx.clearRect(0,0,csh+(tph*mapdx[dqgs][1]+100),css+(tps*mapdx[dqgs][0]+100));
     mapdq=map[dqgs];//从地图文件中获取当前地图数据
     mapdqdx=mapdx[dqgs];//从地图文件中获取当前地图的大小
-    
+    var h=0;
+    var s=0;
+    var wzh=csh;
+    var wzs=css;
+    for (h=0;h<mapdqdx[0];h++)
+    {
+        wzh=csh;
+        for (s=0;s<mapdqdx[1];s++)
+        {
+            
+            switch (mapdq[h][s]) {
+                case 1:
+
+                break;
+                case 0:
+
+                break;
+                case 3:
+
+                break;
+                case 4:
+
+                break;
+                default:
+                break;
+            }
+            wzh=wzh+tph;
+        }
+        wzs=wzs+tps;
+    }
 }
