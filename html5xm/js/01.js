@@ -207,3 +207,24 @@ function sjs(min,max) {
     return  Math.ceil(Math.random()*(max-min)+min);
     //生成随机数
 }
+function szsz(xx,yy,sz) {
+    //根据位置及数字在页面上画数字
+    var x=maxwidth/2-(maxheight/1000*800/2)+xkd;
+    var y=75+xkd;
+    if (xx>1)
+    {
+        xx--;
+        x=x+(dkd+xkd)*xx;
+    }
+    if (yy>1)
+    {
+        yy--;
+        y=y+(dkd+xkd)*yy;
+    }
+    x=x+dkd/2;
+    y=y+dkd-Math.floor(dkd)/100000*14423;
+    ctx.font=" "+Math.floor(dkd)+"px myPingFangSC-Semibold";
+    ctx.textAlign="center";
+    ctx.fillStyle="ffffff";
+    ctx.fillText(sz,x,y,dkd/2);
+}
