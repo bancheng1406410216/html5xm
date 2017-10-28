@@ -70,3 +70,17 @@ window.onresize = function(){
     }
     }  
 }
+function tzfbl() {
+    //调整大小
+    for (;1==1;)
+    {
+        if (maxheight/1000*800<(maxwidth-10))
+        {
+            return;
+        }
+        else
+        {
+            maxheight--;
+        }
+    }
+}
