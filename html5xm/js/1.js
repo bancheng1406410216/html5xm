@@ -158,13 +158,21 @@ function hqaj(e){
         }
         break;
         default:
+        alert("请通过按上下左右键来移动");
         return;
         break;
     }
     if (wc)
     {
+        alert("完成本关");
         ctx.clearRect(0,0,csh+(tph*mapdx[dqgs][1]+100),css+(tps*mapdx[dqgs][0]+100));
         dqgs++;
+        if (dqgs>max-1)
+        {
+            alert("恭喜你完成了走迷宫游戏的所有关卡！");
+            top.location='index.html'; 
+            window.location.replace("index.html");
+        }
         wc=false;
         hmap();
     }
