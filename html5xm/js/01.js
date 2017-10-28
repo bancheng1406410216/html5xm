@@ -121,3 +121,10 @@ function hzyjjx(x,y,k,g,bj) {
     ctx.fill();
     return 1;
 }
+function hzsz2048() {
+    ctx.font=" 40px myPingFangSC-Semibold";
+    ctx.fillStyle="rgb(98,98,98)";
+    ctx.textAlign="center";
+    ctx.fillText("2048",maxwidth/2-(maxheight/1000*800/2)/2-10,40,((maxheight/1000*800/2)/2-10)*2);
+    ctx.textAlign="start";
+}
