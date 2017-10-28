@@ -57,3 +57,14 @@ window.onload=function () {
     best=localStorage.getItem("best");
     window.addEventListener('keydown', hqaj, true);
 }
+window.onresize = function(){
+    //当人为地调整大小后，重新加载页面
+    if (yzgz<2) {  
+   }  
+   else {  
+    if (confirm("你确定重新加载吗？")) {  
+    }  
+    else {  
+    }
+    }  
+}
