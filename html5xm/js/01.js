@@ -421,3 +421,31 @@ function zqd0() {
         }
     }
 }
+function yqd0() {
+    var i=1;
+    var j=1;
+    for (i=4;i>0;i--)
+    {
+        for (j=1;j<5;j++)
+        {
+            if (map[i][j]==0)
+            {
+                map[i][j]=map[i-1][j];
+                map[i-1][j]=0;
+            }
+            else
+            {
+                if (map[i][j]==map[i-1][j])
+                {
+                    map[i][j]=map[i][j]*2;
+                    yzgz=yzgz-1;
+                    map[i-1][j]=0;
+                    if (cj<map[i][j])
+                    {
+                        cj=map[i][j];
+                    }
+                }
+            }
+        }
+    }
+}
