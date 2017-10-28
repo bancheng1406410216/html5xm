@@ -59,3 +59,10 @@ function hqhb()
     kyky=1;
     alert("通过方向键使移动绿色的小球到红球的位置");  
 }
+function hmap()
+{
+    ctx.clearRect(0,0,csh+(tph*mapdx[dqgs][1]+100),css+(tps*mapdx[dqgs][0]+100));
+    mapdq=map[dqgs];//从地图文件中获取当前地图数据
+    mapdqdx=mapdx[dqgs];//从地图文件中获取当前地图的大小
+    
+}
