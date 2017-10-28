@@ -102,3 +102,22 @@ function hq() {
     ctx=c.getContext("2d");
     ctx.rotate(2.3*Math.PI/180);
 }
+function hzbj() {
+    ctx.fillStyle="#ffdab9";
+    ctx.fillRect(0,0,maxwidth,maxheight);
+}
+function hzyjjx(x,y,k,g,bj) {
+    //绘制带有圆角的矩形
+    ctx.beginPath();
+    ctx.moveTo(x+bj,y);
+    ctx.lineTo(x+k-bj,y);
+    ctx.arcTo(x+k,y,x+k,y+bj,bj);
+    ctx.lineTo(x+k,y+g-bj);
+    ctx.arcTo(x+k,y+g,x+k-bj,y+g,bj);
+    ctx.lineTo(x+bj,y+g);
+    ctx.arcTo(x,y+g,x,y+g-bj,bj);
+    ctx.lineTo(x,y+bj);
+    ctx.arcTo(x,y,x+bj,y,bj);
+    ctx.fill();
+    return 1;
+}
